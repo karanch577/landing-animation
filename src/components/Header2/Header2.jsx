@@ -2,7 +2,7 @@ import { useScroll, motion, useTransform } from "framer-motion";
 import React, { useEffect, useState, useRef } from "react";
 import FeatureWrapper from "../FeatureWrapper/FeatureWrapper";
 
-function Header() {
+function Header2() {
 
   const ref = useRef(null);
   const { scrollYProgress } = useScroll({
@@ -17,7 +17,7 @@ function Header() {
       <h1 className="text-5xl font-semibold m-6">
         All you need to know about
         <br />
-        <motion.span style={{opacity}}>the Community</motion.span>
+        <motion.span style={{opacity}}>the Location</motion.span>
       </h1>
       <div className="contact">
         <button className="text-white bg-black rounded-sm mx-7 py-1.5 px-3">
@@ -30,23 +30,23 @@ function Header() {
 
       <div className="flex justify-between m-7">
         <FeatureWrapper>
-          <p className="text-center">Project Size<br />38 acres, 267 units</p>
+          <p className="text-center">Text4</p>
         </FeatureWrapper>
 
         <FeatureWrapper>
-          <p className="text-center">BMRDA/ E- Katha</p>
+          <p className="text-center">Text5</p>
         </FeatureWrapper>
 
         <FeatureWrapper>
-          <p className="text-center">4 & 5 BHK Villas<br />3100 Sft to 4500 Sft</p>
+          <p className="text-center">Text6</p>
         </FeatureWrapper>
 
         <FeatureWrapper>
-          <p className="text-center">40000 Sft Clubhouse</p>
+          <p className="text-center">Text7</p>
         </FeatureWrapper>
       </div>
     </motion.div>
   );
 }
 
-export default Header;
+export default Header2;
