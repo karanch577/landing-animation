@@ -11,11 +11,11 @@ function Header() {
 
   
   const isInView = useInView(targetRef, {
-    margin: "-40%"
+    margin: "-30%"
   })
 
   const isInView1 = useInView(targetRef1, {
-    margin: "-40%"
+    margin: "-30%"
   })
 
   useEffect(() => {
@@ -59,7 +59,7 @@ function Header() {
         key={page}
         initial="initial"
         animate="animate"
-        transition= {{ duration: 2 }}
+        transition= {{ duration: 1.2 }}
         exit="exit"
         variants={variants}
         className="split"
@@ -97,8 +97,9 @@ function Header() {
         </FeatureWrapper>
       </div>
     </div>
-    <div ref={targetRef} className="h-[80vh]">page2</div>
-    <div ref={targetRef1} className="h-[80vh]">page3</div>
+    <div ref={targetRef} className="h-[70vh]"></div>
+    <div ref={targetRef1} className="h-[70vh]"></div>
+    <div className="h-[30vh]"></div>
     </div>
   );
 }
