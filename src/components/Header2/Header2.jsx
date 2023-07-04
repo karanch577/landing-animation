@@ -14,7 +14,7 @@ function Header2() {
  
   return (
     <motion.div ref={ref} className="top-0 h-screen w-full flex flex-col justify-center">
-      <h1 className="text-5xl font-semibold m-6">
+      <h1 className="text-5xl font-semibold m-6 ">
         All you need to know about
         <br />
         <motion.span style={{opacity}}>the Location</motion.span>
