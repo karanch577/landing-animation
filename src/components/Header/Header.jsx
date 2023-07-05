@@ -11,11 +11,11 @@ function Header() {
 
   
   const isInView = useInView(targetRef, {
-    margin: "-25%"
+    margin: "-50% 0px -50% 0px"
   })
 
   const isInView1 = useInView(targetRef1, {
-    margin: "-25%"
+    margin: "-50% 0px -50% 0px"
   })
 
   useEffect(() => {
@@ -48,9 +48,10 @@ function Header() {
     exit: { opacity: 0 },
     
   };
+  
   return (
-    <div>
-    <div className="sticky top-0 h-[100vh] w-full flex flex-col justify-center">
+    <div className="myDiv container">
+    <div className="sticky child top-0 h-[100vh] w-full flex flex-col justify-center">
       <h1 className="text-5xl font-semibold m-6">
         All you need to know about
         <br />
@@ -97,9 +98,9 @@ function Header() {
         </FeatureWrapper>
       </div>
     </div>
-    <div ref={targetRef} className="h-[50vh]"></div>
-    <div ref={targetRef1} className="h-[50vh]"></div>
-    <div className="h-[30vh]"></div>
+    <div ref={targetRef} className={`child h-[60vh]`}>page2</div>
+    <div ref={targetRef1} className="child h-[50vh]">page3</div>
+    <div className="h-[50vh]"></div>
     </div>
   );
 }

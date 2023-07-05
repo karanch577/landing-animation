@@ -1,12 +1,10 @@
-@keyframes fade-in {
-    from {
-      opacity: 0;
-    }
-    to {
-      opacity: 1;
-    }
-  }
-  
-  .fade-in {
-    animation: fade-in 0.3s;
-  }
+.scroll-container {
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+.scroll-target {
+  height: 100vh;
+  scroll-snap-align: start;
+  border: 1px solid black;
+}
