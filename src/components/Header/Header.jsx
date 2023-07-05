@@ -98,8 +98,8 @@ function Header() {
         </FeatureWrapper>
       </div>
     </div>
-    <div ref={targetRef} className={`child h-[60vh]`}>page2</div>
-    <div ref={targetRef1} className="child h-[50vh]">page3</div>
+    <div ref={targetRef} className={`child h-[60vh]`}></div>
+    <div ref={targetRef1} className="child h-[50vh]"></div>
     <div className="h-[50vh]"></div>
     </div>
   );
