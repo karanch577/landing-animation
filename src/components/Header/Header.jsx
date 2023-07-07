@@ -97,6 +97,7 @@ function Header() {
           <p className="text-center">40000 Sft Clubhouse</p>
         </FeatureWrapper>
       </div>
+      <img className="w-[50%]" src="https://megaprojectbucket.s3.ap-south-1.amazonaws.com/mobile1.png" alt="img" />
     </div>
     <div ref={targetRef} className={`child h-[60vh]`}></div>
     <div ref={targetRef1} className="child h-[50vh]"></div>
